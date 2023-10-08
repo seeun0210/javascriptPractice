@@ -1,0 +1,21 @@
+// import { increase as increase1, getCount } from "./counter.js";
+import * as counter from "./counter.js";
+// counter.js에서 불러온 increase함수의 이름을 이 파일에서는 increase1이라는 이름으로 사용하겠다
+// console.log(count);
+// increase1();
+// // console.log(count);
+// // count = -10;
+// // console.log(count);
+// increase1();
+// increase1();
+// increase1();
+// increase1();
+// increase1();
+// const count = getCount();
+// console.log(count);
+counter.increase();
+counter.increase();
+counter.increase();
+counter.increase();
+counter.increase();
+console.log(counter.getCount());
