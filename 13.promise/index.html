@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        fetch('https://www.7timer.info/bin/api.pl?lon=113.17&lat=23.09&product=astro&output=json').then(response=>response.json()
+            // 여기에서 .json()의 반환되는 형태는 JSON이 아니라 javascript에서 쓸 수 있드록 parsing된 object임!!
+            // 또한, Promise이기 때문에 Promise가 pending된 후에 처리가 필요함 안그러면 undefined!!
+        ).then (data=>{console.log(data)
+        console.log(data.dataseries[0])})
+    </script>
+</body>
+</html>
